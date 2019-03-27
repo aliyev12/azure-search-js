@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <title>Document</title>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+            th,
+            td {
+                padding: 5px 10px;
+            }
+
+            header {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>hey</h1>
+        <header>
+            <button type="button" id="getIndexes">Get Indexes</button>
+            <button type="button" id="updateIndexes">Update Indexes</button>
+            <input type="text" id="name" placeholder="name">
+            <input type="text" id="type" placeholder="type">
+        </header>
+
+        <h3>Indexes Table</h3>
+        <table>
+            <thead id="tableHeader">
+                <tr>
+                    <th>name</th>
+                    <th>type</th>
+                    <th>facetable</th>
+                    <th>filterable</th>
+                    <th>indexAnalyzer</th>
+                    <th>key</th>
+                    <th>retrievable</th>
+                    <th>searchAnalyzer</th>
+                    <th>searchable</th>
+                    <th>sortable</th>
+                    <th>synonymMaps</th>
+                    <th>analyzer</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <script src="config.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+var apiKey = '';
+var azureSearchUrl = ''
